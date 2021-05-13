@@ -45,7 +45,7 @@ Go To       Tools         External Tools
 Add         New External Tool
 Edit According to the Image as Shown Below 
 ```
-![External Tool Instruction 1](SourceFiles/Images/External Tools Guide.png)
+![External Tool Instruction 1](SourceFiles/Images/External%20Tools%20Guide.png)
 
 
 ### Setup Chrome WebDriver
