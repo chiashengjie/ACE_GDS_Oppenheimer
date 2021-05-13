@@ -61,7 +61,7 @@ pip install robotframework-seleniumlibrary
 pip install robotframework-request
 ```
 
-To get the full replication for the setups, and the dependency needed to install, please check under requirement.txt
+To get the full replication for the setups, and the dependency needed to install, please check under requirements.txt
 
 ```
 /requirements.txt
