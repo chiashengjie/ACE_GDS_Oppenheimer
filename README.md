@@ -69,7 +69,7 @@ pip install robotframework-seleniumlibrary
 pip install robotframework-request
 ```
 
-To get the full replication for the setups, and the dependency needed to install, please check under requirement.txt
+To get the full replication for the setups, and the dependency needed to install, please check under requirements.txt
 
 ```
 /requirements.txt
@@ -87,7 +87,13 @@ Import Project to Pycharm
 Open Terminal
 Type        java -jar {path-to-this-jar}/OppenheimerProjectDev.jar
 
+<<<<<<< HEAD
 Right Click within Pycharm Application
 Select External Tool 
 Select Run Robot Script        
 ```
+=======
+Open Terminal From Pycharm (Root Project Directory)
+Type        robot -A robotruntest.robot                
+```
+>>>>>>> main
