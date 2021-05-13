@@ -87,13 +87,7 @@ Import Project to Pycharm
 Open Terminal
 Type        java -jar {path-to-this-jar}/OppenheimerProjectDev.jar
 
-<<<<<<< HEAD
 Right Click within Pycharm Application
 Select External Tool 
 Select Run Robot Script        
 ```
-=======
-Open Terminal From Pycharm (Root Project Directory)
-Type        robot -A robotruntest.robot                
-```
->>>>>>> main
