@@ -2,7 +2,7 @@
 # java -jar OppenheimerProjectDev.jar
 
 ## Results Directory
--d Testcases/Results
+-d Results
 
 ## Testcase Directory
 Testcases/US1_CLERK/US1TS_01.robot

@@ -30,6 +30,8 @@ The Summary of the Test Scenario Titles can be found under TS_Summary.txt
 Go To       https://www.python.org/downloads/release/python-394/
 Download    Python 3.9.4 (v3.9.4:1f2e3088f3, Apr  4 2021, 12:32:44)
 
+*** Make sure that PIP is selected and install. This can be check when you type pip in terminal ***
+
 ### Pycharm 2020.3.5 ###
 Go To       https://www.jetbrains.com/pycharm/download/other.html
 Download    Pycharm Version 2020.3.5
@@ -37,8 +39,14 @@ Download    Pycharm Version 2020.3.5
 ### Pycharm Plugins ###
 Download    ANSI Highligher       Idealog       IntelliBot @SeleniumLibrary Patched
 
-*** Make sure that PIP is selected and install >> This can be check when you type pip in terminal ***
+### Set up Pycharm External Tools ###
+Go To       Pycharm       Preference
+Go To       Tools         External Tools
+Add         New External Tool
+Edit According to the Image as Shown Below 
 ```
+![External Tool Instruction 1](SourceFiles/Images/External Tools Guide.png)
+
 
 ### Setup Chrome WebDriver
 
@@ -79,6 +87,7 @@ Import Project to Pycharm
 Open Terminal
 Type        java -jar {path-to-this-jar}/OppenheimerProjectDev.jar
 
-Open Terminal From Pycharm (Root Project Directory)
-Type        robot -A robotruntest.robot                
+Right Click within Pycharm Application
+Select External Tool 
+Select Run Robot Script        
 ```
