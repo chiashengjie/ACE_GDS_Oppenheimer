@@ -3,7 +3,7 @@ This Repository is a solution to the code challenge based on [Oppenheimer Projec
 
 ## Test Design Approaches
 Based on User Stories and Acceptance Criteria found on the PDF file. The Quality Engineer, **Chia Sheng Jie** have decided to use the following Testing Strategies below:
-* Choice of Automation Framework Used for Testing Functionality: `Robot Framework` **(Keyword Based Framework that I am comfortable with and easy to setup!)**
+* Choice of Automation Framework Used for Testing Functionality: `Robot Framework`
 
 * Sort Test Suites according to **Roles**
   * Clerk (3 User Stories)
