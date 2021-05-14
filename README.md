@@ -1,5 +1,5 @@
 #   ACE_GDS_Oppenheimer
-This Repository is a solution to the code challenge based on **Oppenheimer Project** `http://tiny.cc/oppenheimerprojectdev`. It will run as a series of Test Suite to test the functionality of **Oppenheimer Project** based on the User Stories and the Acceptance Criteria.
+This Repository is a solution to the code challenge based on [Oppenheimer Project](http://tiny.cc/oppenheimerprojectdev). It will run as a series of Test Suite to test the functionality of **Oppenheimer Project** based on the User Stories and the Acceptance Criteria.
 
 ## Test Design Approaches
 Based on User Stories and Acceptance Criteria found on the PDF file. The Quality Engineer, **Chia Sheng Jie** have decided to use the following Testing Strategies below:
