@@ -1,0 +1,51 @@
+### Test Scenario COMPLETED ###
+
+* User Story (1) - Clerk
+  * TS01 - Insert Single Record via insert insertPerson API
+  * TS01_U - Insert Single Record via insert insertPerson API (FORCE FAIL)
+    
+* User Story (2) - Clerk
+  * TS01 - Insert Random Number of Records via insertRandomToDatabaseForNoReason API
+  * TS02 - Insert Single Record via insertMultiple insertPerson API
+  * TS03 - Insert Multiple Records via insertMultiple insertPerson API
+    
+* User Story (3) - Clerk
+  * TS01 - Upload Valid CSV with Multiple Record via uploadLargeFileForInsertionToDatabase uploadFile API
+  * TS01_U - Upload Invalid CSV with Multiple Record via uploadLargeFileForInsertionToDatabase uploadFile API (FAIL)
+  * TS02 - Upload Valid CSV with Single Record via uploadLargeFileForInsertionToDatabase uploadFile API
+    
+* User Story (4) - Book Keeper
+  * TS01 - Check API (taxRelief and taxReliefSummary) Can Be Initiated via GET Request
+  * TS02A - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged 18)
+  * TS02B - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged 35)
+  * TS02C - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged 50)
+  * TS02D - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged 75)
+  * TS02E - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (At Least Aged 76)
+    
+* User Story (5) - Governor
+  * TS01 - Check for Dispense Now Button and make sure the spelling is spelled correctly
+  * TS02 - Check for Dispense Now Button will Redirect To a New Page with Content Text to be "Cash dispensed"
+
+### Test Scenario WIP ###
+
+* Change Naming Convention For the Test Scenario
+  * UNHAPPY PATH: _U e.g. TS01_U
+
+* User Story (1) - Clerk
+  * TS01UA - Insert Single Record via insert insertPerson API - Missing NATID (FAIL)
+  * TS01UB - Insert Single Record via insert insertPerson API - Missing GENDER (FAIL)
+  * TS01UC - Insert Single Record via insert insertPerson API - Missing BIRTHDAY (FAIL)
+  * TS01UD - Insert Single Record via insert insertPerson API - Missing SALARY (FAIL)
+  * TS01UD - Insert Single Record via insert insertPerson API - Missing TAX (FAIL)
+
+* User Story (2) - Clerk
+  * TS01_U - Insert Random Number of Records via insertRandomToDatabaseForNoReason API - Count 0 (FAIL)
+  * TS02_U - Insert Single Record via insertMultiple insertPerson API - Empty Record (FAIL)
+
+* User Story (4) - Book Keeper
+  * TS01A - Extract Response Body from (taxRelief and taxReliefSummary) API
+  * TS02F - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged 0)
+  * TS02G_U - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged -50) (FAIL)
+
+* User Story (5) - Governor
+  * TS03 - Check for Dispense Now Button Colour
