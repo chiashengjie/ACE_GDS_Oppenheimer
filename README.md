@@ -5,22 +5,17 @@ This Repository is a solution to the code challenge based on [Oppenheimer Projec
 Based on User Stories and Acceptance Criteria found on the PDF file. The Quality Engineer, **Chia Sheng Jie** have decided to use the following Testing Strategies below:
 * Choice of Automation Framework Used for Testing Functionality: `Robot Framework` **(Keyword Based Framework that I am comfortable with and easy to setup!)**
 
-* Sort Test Suites according to Roles
+* Sort Test Suites according to **Roles**
   * Clerk (3 User Stories)
   * BookKeeper (1 User Stories)
   * Governor (1 User Stories)
 
-### Test Scenarios Done
-The Summary of the Test Scenario Titles can be found under TS_Summary.txt  
+### Test Scenarios (WIP and Completed)
+The Summary of the Test Scenario Titles can be found under summary_ts.txt  
 
 ```
-/TS_Summary.txt
+SourceFiles/Text/summary_ts.txt
 ```
-
-### Test Scenarios Left
-* Unhappy paths for **US2**, **US3**, **US5**
-* **US5 AC1** - Determine the Colour of the Button (Dispense Now Button)
-
 ## Setup Robot Framework To Execute the Test Suite
 
 ### Installing Python 3.9 & Pycharm
@@ -72,7 +67,7 @@ pip install robotframework-request
 To get the full replication for the setups, and the dependency needed to install, please check under requirements.txt
 
 ```
-/requirements.txt
+SourceFiles/Text/requirements.txt
 ```
 
 ### Clone the Repository and Execute the Files
