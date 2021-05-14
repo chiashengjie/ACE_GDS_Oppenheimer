@@ -130,6 +130,7 @@ dmypy.json
 
 .DS_Store
 .idea*
+/results*
 TestCases/Results/log.html
 TestCases/Results/output.xml
 TestCases/Results/report.html
