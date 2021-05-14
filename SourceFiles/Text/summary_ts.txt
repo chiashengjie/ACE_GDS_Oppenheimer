@@ -25,6 +25,7 @@
 * User Story (5) - Governor
   * TS01 - Check for Dispense Now Button and make sure the spelling is spelled correctly
   * TS02 - Check for Dispense Now Button will Redirect To a New Page with Content Text to be "Cash dispensed"
+  * TS03 - Check for Dispense Now Button Colour <Updated on 14/05/2021>
 
 ### Test Scenario WIP ###
 
@@ -46,6 +47,3 @@
   * TS01A - Extract Response Body from (taxRelief and taxReliefSummary) API
   * TS02F - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged 0)
   * TS02G_U - Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged -50) (FAIL)
-
-* User Story (5) - Governor
-  * TS03 - Check for Dispense Now Button Colour

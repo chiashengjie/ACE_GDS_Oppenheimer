@@ -25,3 +25,4 @@ Testcases/US4_BOOKKEEPER/US4TS_02E.robot
 
 Testcases/US5_GOVERNOR/US5TS_01.robot
 Testcases/US5_GOVERNOR/US5TS_02.robot
+Testcases/US5_GOVERNOR/US5TS_03.robot

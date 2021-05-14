@@ -41,9 +41,8 @@ ${TAXRELIEFFIRSTENTRYXPATH}    //tbody/tr/td[2]
 ${CHECKTOTALRELIEFXPATH}    //body/div[1]/div[2]/div[1]/div[3]/div[1]
 
 
-
 ${DISPENSENOWBUTTON}    //a[contains(text(),'Dispense Now')]
 ${CASHDISPENSEDTEXT}    //div[contains(text(),'Cash dispensed')]
-
+${BACKGROUNDCOLORATTRIBUTE}    rgba(220, 53, 69, 1)
 
 

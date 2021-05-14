@@ -20,7 +20,7 @@ User Story Clerk (2) - TS 02
     Clean Rake Database
 
 ### Initialise the Variables needed for Current Test Scenario
-###     Create 5 entries for this Test Scenario via Create Dictionary
+###     Create single entry for this Test Scenario via Create Dictionary
     ${Hero_Entry01}=    Create Dictionary    natid=${HEROES_ENTRY_01[0]}    name=${HEROES_ENTRY_01[1]}    gender=${HEROES_ENTRY_01[2]}    birthday=${HEROES_ENTRY_01[3]}    salary=${HEROES_ENTRY_01[4]}    tax=${HEROES_ENTRY_01[5]}
 
 ### Test for Insert Single Record via insertMultiple insertPerson API

@@ -153,3 +153,10 @@ Calculate Tax Relief Funds
     Log To Console    Convert Tax Relief Amount to Integer: ${ConvertTaxReliefToInt}
     Log To Console    Final Tax Relief Amount: ${FinalTaxReliefAmount}
     [Return]    ${FinalTaxReliefAmount}
+
+Get CSS Property Value
+    [Arguments]    ${locator}    ${attribute}
+    ${CSSxPath}=         Get WebElement    ${locator}
+    ${AttributeProperty}=    Call Method       ${CSSxPath}    value_of_css_property    ${attribute}
+    [Return]     ${AttributeProperty}
+    Log To Console    ${AttributeProperty}
