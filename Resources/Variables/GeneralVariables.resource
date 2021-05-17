@@ -25,9 +25,9 @@ ${GENDERFEMALE}    F
 @{HEROES_ENTRY_05}    555-5555555    Edward    M    11051995    500.00    400.00
 
 ${UPLOADFILEXPATH}    //body/div[1]/div[2]/div[1]/div[1]/div[2]/input[1]
-${FILEPATHSINGLE}    /Users/oyomizu/Projects/Oppenheimer-QE/SourceFiles/TS1_Single.csv
-${FILEPATHMULTIPLE}    /Users/oyomizu/Projects/Oppenheimer-QE/SourceFiles/TS2_Multiple.csv
-${FILEPATHINVALID}    /Users/oyomizu/Projects/Oppenheimer-QE/SourceFiles/TS1U_Invalid.csv
+${FILEPATHSINGLE}    ${EXECDIR}/TestFiles/Single.csv
+${FILEPATHMULTIPLE}    ${EXECDIR}/TestFiles/Multiple.csv
+${FILEPATHINVALID}    ${EXECDIR}/TestFiles/Invalid.csv
 
 @{HEROAGE18}    188-1231232    J Robert    M    22042003    500.00    50.00
 @{HEROAGE35}    358-1231232    J Robert II    M    22041986    1000.00    100.00
