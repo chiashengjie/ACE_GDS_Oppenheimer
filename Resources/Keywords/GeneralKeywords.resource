@@ -48,25 +48,26 @@ Initiate POST Request With Parameters
     Create Session    ${SessionName}    ${MAINPAGEURL}
     ${header}=    Create Dictionary   Content-Type=application/json
     ${response}=    POST On Session    ${SessionName}    ${APISubURL}    headers=${header}    json=${body}
+    Should Be Equal As Strings    ${response.status_code}    202
     Log To Console    ${EMPTY}
     Log To Console    == Response Debug ==
     Log To Console    Request Status Code: ${response.status_code}
     Log To Console    Request JSON Response Body: ${response.content}
 
-Initiate POST Request With File Upload
-    [Arguments]    ${SessionName}    ${APISubURL}
-    Create Session    ${SessionName}    ${MAINPAGEURL}
-    ${FileUploadName}=    Get Binary File    /Users/oyomizu/Projects/Oppenheimer-QE/SourceFiles/individual.csv
-    ${Header}=    Create Dictionary   Accept=application/json, text/plain, */*      Content-Type=multipart/form-data; boundary=----WebKitFormBoundary7A18MoUWPv7RqmPq
-    ${Response}=    POST On Session    ${SessionName}    ${APISubURL}    data=${FileUploadName}  headers=${Header}
-    Log To Console    ${EMPTY}
-    Log To Console    == Response Debug ==
-    Log To Console    Request Status Code: ${Response.status_code}
-    Log To Console    Request JSON Response Body: ${Response.content}
+#Initiate POST Request With File Upload
+#    [Arguments]    ${SessionName}    ${APISubURL}
+#    Create Session    ${SessionName}    ${MAINPAGEURL}
+#    ${FileUploadName}=    Get Binary File    ${FILEPATHSINGLE}
+#    ${Header}=    Create Dictionary   Accept=application/json, text/plain, */*      Content-Type=multipart/form-data; boundary=----WebKitFormBoundary7A18MoUWPv7RqmPq
+#    ${Response}=    POST On Session    ${SessionName}    ${APISubURL}    data=${FileUploadName}  headers=${Header}
+#    Should Be Equal As Strings    ${response.status_code}    202
+#    Log To Console    ${EMPTY}
+#    Log To Console    == Response Debug ==
+#    Log To Console    Request Status Code: ${Response.status_code}
+#    Log To Console    Request JSON Response Body: ${Response.content}
 
 Clean Rake Database
     Initiate POST Request    RAKE DATABASE    calculator/rakeDatabase
-    #Click Refresh Tax Relief Button
     Reload Page
 
 Insert Hero Details via Insert API
@@ -74,23 +75,27 @@ Insert Hero Details via Insert API
     ${body}=    Create Dictionary    natid=${natid}    name=${name}    gender=${gender}    birthday=${birthday}    salary=${salary}    tax=${tax}
     Initiate POST Request With Parameters   Post Tax Relief    calculator/insert    ${body}
     Click Refresh Tax Relief Button
+    Wait Until Element Contains    ${TAXRELIEFTEXT}    Total Tax Relieves
 
 Insert Single Hero Details via InsertMultiple API
     [Arguments]    ${body}
     ${bodylist}=    Create List    ${body}
     Initiate POST Request With Parameters   Post Tax Relief List    calculator/insertMultiple    ${bodyList}
     Click Refresh Tax Relief Button
+    Wait Until Element Contains    ${TAXRELIEFTEXT}    Total Tax Relieves
 
 Insert Multiple Hero Details via InsertMultiple API
     [Arguments]    ${body1}    ${body2}    ${body3}    ${body4}     ${body5}
     ${bodylist}=    Create List    ${body1}    ${body2}    ${body3}    ${body4}     ${body5}
     Initiate POST Request With Parameters   Post Tax Relief List    calculator/insertMultiple    ${bodyList}
     Click Refresh Tax Relief Button
+    Wait Until Element Contains    ${TAXRELIEFTEXT}    Total Tax Relieves
 
 Insert Multiple Random Hero Details via API
     [Arguments]  ${count}
     Initiate POST Request    INSERT RANDOM LIST    calculator/insertRandomToDatabaseForNoReason?count=${count}
     Click Refresh Tax Relief Button
+    Wait Until Element Contains    ${TAXRELIEFTEXT}    Total Tax Relieves
 
 Check UI Tax Relief Funds
     [Arguments]    ${TotalReliefFunds}    ${TotalNoOfHeroes}

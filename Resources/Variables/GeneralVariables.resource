@@ -7,6 +7,7 @@ ${MAINTITLE}    The Oppenheimer Project
 ${MAINTITLEXPATH}    //h1[contains(text(),'The Oppenheimer Project')]
 
 ${REFRESHTAXBUTTON}    //button[contains(text(),'Refresh Tax Relief Table')]
+${TAXRELIEFTEXT}    //h1[contains(text(),'Total Tax Relieves')]
 
 ${RAKEDATABASENAME}    Rack Database Session
 ${RAKEAPIURL}    calculator/rakeDatabase
@@ -28,6 +29,9 @@ ${UPLOADFILEXPATH}    //body/div[1]/div[2]/div[1]/div[1]/div[2]/input[1]
 ${FILEPATHSINGLE}    ${EXECDIR}/TestFiles/Single.csv
 ${FILEPATHMULTIPLE}    ${EXECDIR}/TestFiles/Multiple.csv
 ${FILEPATHINVALID}    ${EXECDIR}/TestFiles/Invalid.csv
+
+@{HEROAGE0}    111-1231231    J Zero Robott    M    01012021    200.00    50.00
+@{HEROAGENEG}    222-1231231    J Neg Robott    F    01012023    200.00    50.00
 
 @{HEROAGE18}    188-1231232    J Robert    M    22042003    500.00    50.00
 @{HEROAGE35}    358-1231232    J Robert II    M    22041986    1000.00    100.00

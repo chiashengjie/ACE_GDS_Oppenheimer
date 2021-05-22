@@ -6,10 +6,19 @@
 
 ## Testcase Directory
 Testcases/US1_CLERK/US1TS_01.robot
-Testcases/US1_CLERK/US1TS_01U.robot
+Testcases/US1_CLERK/US1TS_01UA.robot
+Testcases/US1_CLERK/US1TS_01UB.robot
+Testcases/US1_CLERK/US1TS_01UC.robot
+Testcases/US1_CLERK/US1TS_01UD.robot
+Testcases/US1_CLERK/US1TS_01UE.robot
+Testcases/US1_CLERK/US1TS_01UF.robot
 
 Testcases/US2_CLERK/US2TS_01.robot
+Testcases/US2_CLERK/US2TS_01UA.robot
+Testcases/US2_CLERK/US2TS_01UB.robot
+Testcases/US2_CLERK/US2TS_01UC.robot
 Testcases/US2_CLERK/US2TS_02.robot
+Testcases/US2_CLERK/US2TS_02U.robot
 Testcases/US2_CLERK/US2TS_03.robot
 
 Testcases/US3_CLERK/US3TS_01.robot
@@ -22,6 +31,8 @@ Testcases/US4_BOOKKEEPER/US4TS_02B.robot
 Testcases/US4_BOOKKEEPER/US4TS_02C.robot
 Testcases/US4_BOOKKEEPER/US4TS_02D.robot
 Testcases/US4_BOOKKEEPER/US4TS_02E.robot
+Testcases/US4_BOOKKEEPER/US4TS_02F.robot
+Testcases/US4_BOOKKEEPER/US4TS_02G.robot
 
 Testcases/US5_GOVERNOR/US5TS_01.robot
 Testcases/US5_GOVERNOR/US5TS_02.robot
