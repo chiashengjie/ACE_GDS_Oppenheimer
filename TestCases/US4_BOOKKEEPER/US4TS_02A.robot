@@ -23,8 +23,7 @@ User Story BookKeeper (4) - TS 02 A
     Insert Hero Details via Insert API    ${HEROAGE18[0]}    ${HEROAGE18[1]}    ${HEROAGE18[2]}    ${HEROAGE18[3]}    ${HEROAGE18[4]}    ${HEROAGE18[5]}
     ${TaxReliefAmount}=    Calculate Tax Relief Funds    ${HEROAGE18[2]}    ${HEROAGE18[3]}    ${HEROAGE18[4]}    ${HEROAGE18[5]}
 
-    Element Should Contain    ${NATIDFIRSTENTRYXPATH}    $$$$$$$
-    Element Text Should Be    ${TAXRELIEFFIRSTENTRYXPATH}    ${TaxReliefAmount}
+    Check UI Tax Relief Funds    ${TaxReliefAmount}    1
 
 
     [Teardown]   Teardown Configuration

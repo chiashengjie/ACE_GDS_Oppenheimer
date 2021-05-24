@@ -26,7 +26,9 @@ User Story Clerk (1) - TS 01
     Insert Hero Details via Insert API
 
     Element Text Should Be    ${NATIDFIRSTENTRYXPATH}    188-$$$$$$$
-    Element Should Contain    ${CHECKTOTALRELIEFXPATH}    £19750.00 will be dispensed to 1 Working Class Hero/s
+    Check UI Tax Relief Funds    19750.00    1
 
+### Clean Up Database for Debugging As Current Entry Will Corrupt the Database and Site
+    Clean Rake Database
 
     [Teardown]   Teardown Configuration

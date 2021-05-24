@@ -102,6 +102,11 @@ Check UI Tax Relief Funds
     Element Should Contain    ${NATIDFIRSTENTRYXPATH}    $$$$$$$
     Element Should Contain    ${CHECKTOTALRELIEFXPATH}    £${TotalReliefFunds} will be dispensed to ${TotalNoOfHeroes} Working Class Hero/s
 
+Check UI Tax Dispense to Working Class Hero
+    [Arguments]    ${TotalNoOfHeroes}
+    Element Should Contain    ${NATIDFIRSTENTRYXPATH}    $$$$$$$
+    Element Should Contain    ${CHECKTOTALRELIEFXPATH}    will be dispensed to ${TotalNoOfHeroes} Working Class Hero/s
+
 Calculate Rough Age from Birthday
     [Arguments]    ${birthday}
     ${BirthdayRange}=    Get Substring    ${birthday}    -4

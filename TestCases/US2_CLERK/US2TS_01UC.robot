@@ -23,8 +23,9 @@ User Story Clerk (2) - TS 01 UNHAPPY C
 ###     Uses insertRandomToDatabaseForNoReason API to generate a random list of Hero Details based on [count]
 
 ### Test for Multiple Single Hero Details via insertRandomToDatabaseForNoReason: Set Count to 0 to check if there are any possible errors
-    Insert Multiple Random Hero Details via API   ${EMPTY}
-    Element Should Contain    ${CheckTotalReliefxPath}    £0 will be dispensed to 0 Working Class Hero/s
+    Insert Multiple Random Hero Details via API    ${EMPTY}
+
+    Check UI Tax Dispense to Working Class Hero    0
 
 
     [Teardown]   Teardown Configuration

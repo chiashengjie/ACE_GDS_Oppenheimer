@@ -24,8 +24,9 @@ User Story Clerk (2) - TS 02
     ${Hero_Entry01}=    Create Dictionary    natid=${HEROES_ENTRY_01[0]}    name=${HEROES_ENTRY_01[1]}    gender=${HEROES_ENTRY_01[2]}    birthday=${HEROES_ENTRY_01[3]}    salary=${HEROES_ENTRY_01[4]}    tax=${HEROES_ENTRY_01[5]}
 
 ### Test for Insert Single Record via insertMultiple insertPerson API
-    Insert Single Hero Details via InsertMultiple API    ${Hero_Entry01}
-    Element Should Contain    ${CheckTotalReliefxPath}    £1284.00 will be dispensed to 1 Working Class Hero/s
+    Insert Single Hero Details via InsertMultiple API    ${HERO_ENTRY01}
+
+    Check UI Tax Relief Funds    1284.00    1
 
 
     [Teardown]   Teardown Configuration
