@@ -29,7 +29,8 @@ User Story Clerk (2) - TS 03
 
 ### Test for Insert Multiple Records via insertMultiple insertPerson API
     Insert Multiple Hero Details via InsertMultiple API    ${Hero_Entry01}    ${Hero_Entry02}    ${Hero_Entry03}    ${Hero_Entry04}    ${Hero_Entry05}
-    Element Should Contain    ${CheckTotalReliefxPath}    £8892.00 will be dispensed to 5 Working Class Hero/s
+
+    Check UI Tax Relief Funds    8892.00    5
 
 
     [Teardown]   Teardown Configuration

@@ -28,7 +28,7 @@ User Story Clerk (1) - TS 01 UNHAPPY C
 
 ### Check if the entry is appended in the database: The xPath for the First Entry will appear only if the entry is successfully appended
     Element Text Should Be    ${CheckFirstEntryNatIdxPath}    188-$$$$$$$
-    Element Should Contain    ${CheckTotalReliefxPath}    £19750.00 will be dispensed to 1 Working Class Hero/s
+    Check UI Tax Relief Funds    19750.00    1
 
 ### Clean Up Database for Debugging As Current Entry Will Corrupt the Database and Site
     Clean Rake Database

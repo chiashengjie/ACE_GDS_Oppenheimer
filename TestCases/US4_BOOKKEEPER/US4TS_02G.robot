@@ -23,8 +23,7 @@ User Story BookKeeper (4) - TS 02 UNHAPPY B
     Insert Hero Details via Insert API    ${HEROAGENEG[0]}    ${HEROAGENEG[1]}    ${HEROAGENEG[2]}    ${HEROAGENEG[3]}    ${HEROAGENEG[4]}    ${HEROAGENEG[5]}
     ${TaxReliefAmount}=    Calculate Tax Relief Funds    ${HEROAGENEG[2]}    ${HEROAGENEG[3]}    ${HEROAGENEG[4]}    ${HEROAGENEG[5]}
 
-    Element Should Contain    ${NATIDFIRSTENTRYXPATH}    $$$$$$$
-    Element Text Should Be    ${TAXRELIEFFIRSTENTRYXPATH}    ${TaxReliefAmount}
+    Check UI Tax Relief Funds    ${TaxReliefAmount}    1
 
 
     [Teardown]   Teardown Configuration

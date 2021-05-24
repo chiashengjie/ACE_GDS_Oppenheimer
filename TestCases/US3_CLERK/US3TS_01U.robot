@@ -19,15 +19,12 @@ User Story Clerk (3) - TS 01UNHAPPY
 ### Initial Clean Up Database for Debugging
     Clean Rake Database
 
-### Initialise the Variables needed for Current Test Scenario
-    ${CheckVariableList}=    Create List    21439.00    5
-
 ### Select an Invalid CSV File (Missing Name Field) and Upload
     Page Should Contain Element    ${UPLOADFILEXPATH}
     Choose File    ${UPLOADFILEXPATH}    ${FILEPATHINVALID}
     Click Refresh Tax Relief Button
 
-    Check UI Tax Relief Funds    ${CheckVariableList[0]}    ${CheckVariableList[1]}
+    Check UI Tax Relief Funds    21439.00    5
 
 
     [Teardown]    Teardown Configuration
