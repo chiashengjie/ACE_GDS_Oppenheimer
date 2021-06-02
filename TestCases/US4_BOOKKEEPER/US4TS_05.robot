@@ -9,7 +9,7 @@ Resource    ../../Resources/Variables/GeneralVariables.resource
 
 
 *** Test Cases ***
-User Story BookKeeper (4) - TS 02 D
+User Story BookKeeper (4) - TS 05
     [documentation]   Check for Mask Encryption on NATID and Computation of Tax Relief Amount (Aged 75)
     [tags]   bookkeeper    hero_aged_75
 
@@ -23,6 +23,8 @@ User Story BookKeeper (4) - TS 02 D
     Insert Hero Details via Insert API    ${HEROAGE75[0]}    ${HEROAGE75[1]}    ${HEROAGE75[2]}    ${HEROAGE75[3]}    ${HEROAGE75[4]}    ${HEROAGE75[5]}
     ${TaxReliefAmount}=    Calculate Tax Relief Funds    ${HEROAGE75[2]}    ${HEROAGE75[3]}    ${HEROAGE75[4]}    ${HEROAGE75[5]}
 
+### Check for the UI if it displays the Tax Relief Amount and the number of workers
+### ### Check UI Tax Relief Funds    <TaxReliefAmount>    <TotalNumberOfHeroesRecorded>
     Check UI Tax Relief Funds    ${TaxReliefAmount}    1
 
 

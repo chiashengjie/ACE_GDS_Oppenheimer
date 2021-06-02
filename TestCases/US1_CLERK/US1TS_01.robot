@@ -28,7 +28,5 @@ User Story Clerk (1) - TS 01
     Element Text Should Be    ${NATIDFIRSTENTRYXPATH}    188-$$$$$$$
     Check UI Tax Relief Funds    19750.00    1
 
-### Clean Up Database for Debugging As Current Entry Will Corrupt the Database and Site
-    Clean Rake Database
 
     [Teardown]   Teardown Configuration

@@ -1,5 +1,5 @@
 ## Setup localhost for Oppenheimer Project
-# java -jar OppenheimerProjectDev.jar
+## java -jar OppenheimerProjectDev.jar
 
 ## Results Directory
 -d Results
@@ -26,13 +26,13 @@ Testcases/US3_CLERK/US3TS_01U.robot
 Testcases/US3_CLERK/US3TS_02.robot
 
 Testcases/US4_BOOKKEEPER/US4TS_01.robot
-Testcases/US4_BOOKKEEPER/US4TS_02A.robot
-Testcases/US4_BOOKKEEPER/US4TS_02B.robot
-Testcases/US4_BOOKKEEPER/US4TS_02C.robot
-Testcases/US4_BOOKKEEPER/US4TS_02D.robot
-Testcases/US4_BOOKKEEPER/US4TS_02E.robot
-Testcases/US4_BOOKKEEPER/US4TS_02F.robot
-Testcases/US4_BOOKKEEPER/US4TS_02G.robot
+Testcases/US4_BOOKKEEPER/US4TS_02.robot
+Testcases/US4_BOOKKEEPER/US4TS_03.robot
+Testcases/US4_BOOKKEEPER/US4TS_04.robot
+Testcases/US4_BOOKKEEPER/US4TS_05.robot
+Testcases/US4_BOOKKEEPER/US4TS_06.robot
+Testcases/US4_BOOKKEEPER/US4TS_07UA.robot
+Testcases/US4_BOOKKEEPER/US4TS_07UB.robot
 
 Testcases/US5_GOVERNOR/US5TS_01.robot
 Testcases/US5_GOVERNOR/US5TS_02.robot

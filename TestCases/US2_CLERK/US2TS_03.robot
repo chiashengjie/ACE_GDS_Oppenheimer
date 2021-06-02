@@ -30,6 +30,8 @@ User Story Clerk (2) - TS 03
 ### Test for Insert Multiple Records via insertMultiple insertPerson API
     Insert Multiple Hero Details via InsertMultiple API    ${Hero_Entry01}    ${Hero_Entry02}    ${Hero_Entry03}    ${Hero_Entry04}    ${Hero_Entry05}
 
+### Check for the UI if it displays the Tax Relief Amount and the number of workers
+### ### Check UI Tax Relief Funds    <TaxReliefAmount>    <TotalNumberOfHeroesRecorded>
     Check UI Tax Relief Funds    8892.00    5
 
 
