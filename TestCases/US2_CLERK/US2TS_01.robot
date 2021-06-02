@@ -25,6 +25,8 @@ User Story Clerk (2) - TS 01
 ### Test for Multiple Single Hero Details via insertRandomToDatabaseForNoReason
     Insert Multiple Random Hero Details via API    ${RANDOMFACTORVARIABLE}
 
+### Check for the UI if it displays the Tax Relief Amount and the number of workers
+### ### Check UI Tax Dispense to Working Class Hero    <TotalNumberOfHeroesRecorded>
     Check UI Tax Dispense to Working Class Hero    ${RANDOMFACTORVARIABLE}
 
 

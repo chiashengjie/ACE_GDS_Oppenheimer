@@ -26,6 +26,8 @@ User Story Clerk (2) - TS 02
 ### Test for Insert Single Record via insertMultiple insertPerson API
     Insert Single Hero Details via InsertMultiple API    ${Hero_Entry_Empty}
 
+### Check for the UI if it displays the Tax Relief Amount and the number of workers
+### ### Check UI Tax Relief Funds    <TaxReliefAmount>    <TotalNumberOfHeroesRecorded>
     Check UI Tax Dispense to Working Class Hero    0
 
 

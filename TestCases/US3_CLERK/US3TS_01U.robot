@@ -24,6 +24,8 @@ User Story Clerk (3) - TS 01UNHAPPY
     Choose File    ${UPLOADFILEXPATH}    ${FILEPATHINVALID}
     Click Refresh Tax Relief Button
 
+### Check for the UI if it displays the Tax Relief Amount and the number of workers
+### ### Check UI Tax Relief Funds    <TaxReliefAmount>    <TotalNumberOfHeroesRecorded>
     Check UI Tax Relief Funds    21439.00    5
 
 
